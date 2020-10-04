@@ -1,0 +1,19 @@
+name: Void Bastards
+game_slug: void-bastards
+version: GOG
+slug: void_bastards
+runner: wine
+script:
+  files:
+  - goginstaller: N/A:Please select the GOG.com Windows installer
+  game:
+    arch: win64
+    gogid: 2120667520
+    gogslug: void_bastards
+    prefix: $GAMEDIR
+    exe: drive_c/GOG Games/Void Bastards/Void Bastards.exe
+  installer:
+  - task:
+      executable: goginstaller
+      name: wineexec
+      prefix: $GAMEDIR
